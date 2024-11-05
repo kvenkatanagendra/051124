@@ -1,0 +1,118 @@
+
+        
+        * {
+            margin: 5px;
+            padding: auto;
+            box-sizing: border-box;
+        }
+
+  
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+     
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #14bddb;
+            color: #fff;
+        }
+
+      
+        .logo img {
+            height: 40px;
+        }
+
+        
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 0;
+        }
+
+        .navbar ul li {
+            position: relative;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #444; 
+            color: #5fed0063; 
+            border-radius: 5px;
+        }
+
+       
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            min-width: 160px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555; 
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #fff;
+           
+        }
+        
+
+        
+        @media (max-width: 760px) {
+            .menu-toggle {
+                display: block; 
+            }
+            .navbar ul {
+                display: none; 
+                flex-direction: column;
+                width: 100%;
+                background-color: #333;
+                color: rgb(255, 0, 157);
+            }
+            .navbar ul.show {
+                display: flex; 
+            }
+            .navbar ul li {
+                width: 100%; 
+                text-align: left;
+                padding: 10px 0;
+                color: brown;
+            }
+        }
+       
+   
