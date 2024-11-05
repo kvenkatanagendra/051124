@@ -49,7 +49,7 @@
         }
 
         .navbar ul li a:hover {
-            background-color: #444; 
+            background-color: #e26e10; 
             color: #5fed0063; 
             border-radius: 5px;
         }
@@ -101,7 +101,7 @@
                 display: none; 
                 flex-direction: column;
                 width: 100%;
-                background-color: #333;
+                background-color: #c325e2;
                 color: rgb(255, 0, 157);
             }
             .navbar ul.show {
@@ -111,6 +111,7 @@
                 width: 100%; 
                 text-align: left;
                 padding: 10px 0;
+                background-color: chartreuse;
                 color: brown;
             }
         }
